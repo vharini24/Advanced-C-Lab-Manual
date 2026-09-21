@@ -12,10 +12,47 @@ Algorithm:
 5.	Call the max_of_four function with the input integers and store the result in the greater variable
  
 Program:
-//type your code here
+```
+#include <stdio.h>
+
+int max_of_four(int a, int b, int c, int d)
+{
+    if (a > b && a > c && a > d)
+    {
+        return a;
+    }
+    else if (b > a && b > c && b > d)
+    {
+        return b;
+    }
+    else if (c > a && c > b && c > d)
+    {
+        return c;
+    }
+    else
+    {
+        return d;
+    }
+}
+
+int main()
+{
+    int n1, n2, n3, n4, greater;
+
+    scanf("%d%d%d%d", &n1, &n2, &n3, &n4);
+
+    greater = max_of_four(n1, n2, n3, n4);
+
+    printf("%d", greater);
+}
+
+
+```
 
 Output:
-//paste your output here
+
+
+
 
 Result:
 Thus, the program  that create a function to find the greatest number is verified successfully.
